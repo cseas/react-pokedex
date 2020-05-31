@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from "react";
 import { PokemonCard } from "./PokemonCard";
 
-const PokeAPI = "https://pokeapi.co/api/v2/pokemon?limit=15";
+const PokeAPI = "https://pokeapi.co/api/v2/pokemon?limit=150";
 
 export function PokemonGrid() {
   // Hooks
@@ -22,7 +22,9 @@ export function PokemonGrid() {
   if (!isPokemonListLoading) {
     return (
       <div className="container">
-        <PokemonCard pokemon={pokemons[0]} />
+        {pokemons.map((pokemon) => (
+          <PokemonCard pokemon={pokemon} />
+        ))}
       </div>
     );
   } else return <h3>Loading...</h3>;

@@ -20,7 +20,7 @@ export function PokemonCard(props) {
       <>
         <div className="card">
           <img
-            src={`https://pokeres.bastionbot.org/images/pokemon/${pokemonData.order}.png`}
+            src={`https://pokeres.bastionbot.org/images/pokemon/${pokemonData.id}.png`}
             width={100}
             alt=""
           />

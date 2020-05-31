@@ -1,6 +1,9 @@
 import React from "react";
+
+import { PokemonGrid } from "./components/PokemonGrid";
+import { TitleBar } from "./components/TitleBar";
+
 import "./App.css";
-import { PokemonCard } from "./components/PokemonCard";
 
 const PokeAPI = "https://pokeapi.co/api/v2/pokemon?limit=15";
 
@@ -17,18 +20,10 @@ function App() {
   getPokemons();
 
   return (
-    // main app
     <div className="app">
-      {/* title-bar */}
-      <div className="title-bar">
-        <h3>PokeDex</h3>
-      </div>
-
-      <div className="container">
-        <PokemonCard />
-      </div>
+      <TitleBar />
+      <PokemonGrid />
     </div>
-    // main app end
   );
 }
 

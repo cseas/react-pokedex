@@ -1,17 +1,14 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 
-export class PokemonCard extends React.Component {
-  constructor() {
-    super();
-    this.state = {};
-  }
+export function PokemonCard() {
+  const [name, setName] = useState("Bulbasaur");
 
-  componentDidMount() {
-    this.setState({ pokemonName: "Pikachu" });
-  }
+  useEffect(() => {
+    setName("Pikachu");
+  }, []);
 
-  render() {
-    return (
+  return (
+    <>
       <div className="card">
         <img
           src="https://pokeres.bastionbot.org/images/pokemon/1.png"
@@ -19,11 +16,11 @@ export class PokemonCard extends React.Component {
           alt=""
         />
         <h4>
-          <b>{this.state.pokemonName}</b>
+          <b>{name}</b>
         </h4>
         <p>Id: 1</p>
         <p>Type: 1</p>
       </div>
-    );
-  }
+    </>
+  );
 }

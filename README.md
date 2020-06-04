@@ -2,6 +2,8 @@
 
 Get started with ReactJs by building your own Pokedex.
 
+Live demo: <http://www.absingh.com/react-pokedex/>
+
 ## Installation
 
 1. NPM
@@ -18,6 +20,7 @@ Get started with ReactJs by building your own Pokedex.
 - Part 5: Props, State and Hooks
 - Part 6: Dynamically rendering components
 - Part 7: What the tutorials don't tell you
+- Part 8: What do I do now?
 
 ## What the tutorials don't tell you
 
@@ -35,22 +38,26 @@ Get started with ReactJs by building your own Pokedex.
    - More secure by nature
    - Easier to manage large projects
 1. Add `Node` gitignore to avoid uploading packages
-1. Never use `var`
+1. Never use `var`. Use `const` and `let`.
 1. Useful extensions
    - Prettier
    - Simple React Snippets
-1. You don't need to wrap components with <div> or <Fragment> since [React v16.2.0](https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html)
+1. You don't need to wrap components with `<div>` or `<Fragment>` since [React v16.2.0](https://reactjs.org/blog/2017/11/28/react-v16.2.0-fragment-support.html).
 1. Avoid default exports
-1. You don't absolutely need Redux
+1. You can live without Redux. Try Context API.
 
 ## What to do now
 
 - Learn React Hooks, Context API and React Router by building your own photo search engine: [Link](https://github.com/Yog9/SnapShot)
 - Explore Lifecycle Methods by searching Emojis:[Link](https://github.com/ahfarmer/emoji-search)
 - Explore common use cases of the React Router: [Link](https://github.com/clintonwoo/hackernews-react-graphql)
-- Build a Full Stack application with your favorite database and backend
+- Build a Full Stack application with your favorite database and backend.
 
 ## Pokemon API
 
 - https://pokeres.bastionbot.org/images/pokemon/1.png
 - https://pokeapi.co/api/v2/pokemon?limit=150
+
+## Deployment Instructions
+
+<https://create-react-app.dev/docs/deployment/#github-pages>
